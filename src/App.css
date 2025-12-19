@@ -1,38 +1,346 @@
+:root {
+  --primary-color: #2E86AB;
+  --secondary-color: #A23B72;
+  --accent-color: #F18F01;
+  --success-color: #06A77D;
+  --light-bg: #F8F9FA;
+  --dark-text: #2C3E50;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px 0;
+}
+
 .App {
+  min-height: 100vh;
+}
+
+.app-header {
   text-align: center;
+  color: white;
+  margin-bottom: 30px;
+  animation: fadeIn 0.6s ease-in;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.subtitle {
+  font-size: 1.1rem;
+  opacity: 0.95;
+  margin: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+  overflow: hidden;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+  background: white;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-header {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 20px;
+  border: none;
+}
+
+.card-header h5 {
+  margin: 0;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-body {
+  padding: 25px;
+}
+
+.btn-group-primary {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.btn-package {
+  flex: 1;
+  min-width: 150px;
+  padding: 15px 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: 2px solid #ddd;
+  background: white;
+  color: var(--primary-color);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-package:hover {
+  border-color: var(--primary-color);
+  transform: scale(1.02);
+}
+
+.btn-package.active {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--dark-text);
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--accent-color);
+}
+
+.form-check {
+  padding: 12px;
+  margin-bottom: 10px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-check:hover {
+  background: #fffbea;
+  border-left: 4px solid var(--accent-color);
+  padding-left: 16px;
+}
+
+.form-check input[type="checkbox"],
+.form-check input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  cursor: pointer;
+  accent-color: var(--primary-color);
+  flex-shrink: 0;
+}
+
+.form-check label {
+  margin: 0;
+  cursor: pointer;
+  user-select: none;
+  flex-grow: 1;
+}
+
+.price-tag {
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-align: right;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.form-group-ski {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .form-group-ski {
+    grid-template-columns: 1fr;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ski-option-card {
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border-left: 4px solid var(--primary-color);
+}
+
+.ski-option-title {
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.info-box {
+  background: #e3f2fd;
+  border-left: 4px solid var(--primary-color);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+  color: #1565c0;
+  line-height: 1.6;
+}
+
+.warning-box {
+  background: #fff3e0;
+  border-left: 4px solid var(--accent-color);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+  color: #e65100;
+  line-height: 1.6;
+}
+
+.optional-note {
+  font-size: 0.85rem;
+  color: #666;
+  font-style: italic;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.radio-group {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.radio-group label {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.radio-group input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: var(--primary-color);
+  margin: 0;
+}
+
+.total-section {
+  background: linear-gradient(135deg, rgba(46, 134, 171, 0.1), rgba(162, 59, 114, 0.1));
+  border: 2px solid var(--primary-color);
+  border-radius: 12px;
+  padding: 25px;
+  margin: 30px 0;
+}
+
+.total-label {
+  font-size: 1.2rem;
+  color: var(--dark-text);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.total-amount {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  text-align: center;
+  font-family: 'Courier New', monospace;
+  margin-bottom: 20px;
+}
+
+.total-breakdown {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px solid #ddd;
+}
+
+.breakdown-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  color: var(--dark-text);
+  font-size: 0.95rem;
+}
+
+.breakdown-item.food-note {
+  color: #e74c3c;
+  font-size: 0.85rem;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.app-footer {
   color: white;
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  font-size: 0.9rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(-20px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 576px) {
+  .app-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .btn-package {
+    min-width: 120px;
+    font-size: 1rem;
+    padding: 12px 15px;
+  }
+
+  .total-amount {
+    font-size: 2rem;
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+
+  .form-check {
+    flex-wrap: wrap;
+  }
+
+  .price-tag {
+    width: 100%;
+    text-align: right;
+    margin-left: 0;
+    margin-top: 5px;
   }
 }
