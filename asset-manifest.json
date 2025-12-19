@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/DanS-SkiCamp-Calculator/static/css/main.dcae7781.css",
-    "main.js": "/DanS-SkiCamp-Calculator/static/js/main.2294ebd1.js",
+    "main.css": "/DanS-SkiCamp-Calculator/static/css/main.0f9b57f4.css",
+    "main.js": "/DanS-SkiCamp-Calculator/static/js/main.1513ca82.js",
     "static/js/453.c3672492.chunk.js": "/DanS-SkiCamp-Calculator/static/js/453.c3672492.chunk.js",
     "index.html": "/DanS-SkiCamp-Calculator/index.html",
-    "main.dcae7781.css.map": "/DanS-SkiCamp-Calculator/static/css/main.dcae7781.css.map",
-    "main.2294ebd1.js.map": "/DanS-SkiCamp-Calculator/static/js/main.2294ebd1.js.map",
+    "main.0f9b57f4.css.map": "/DanS-SkiCamp-Calculator/static/css/main.0f9b57f4.css.map",
+    "main.1513ca82.js.map": "/DanS-SkiCamp-Calculator/static/js/main.1513ca82.js.map",
     "453.c3672492.chunk.js.map": "/DanS-SkiCamp-Calculator/static/js/453.c3672492.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dcae7781.css",
-    "static/js/main.2294ebd1.js"
+    "static/css/main.0f9b57f4.css",
+    "static/js/main.1513ca82.js"
   ]
 }
