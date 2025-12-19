@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/DanS-SkiCamp-Calculator/static/css/main.f855e6bc.css",
+    "main.js": "/DanS-SkiCamp-Calculator/static/js/main.d9636851.js",
+    "static/js/453.c3672492.chunk.js": "/DanS-SkiCamp-Calculator/static/js/453.c3672492.chunk.js",
+    "static/media/logo.svg": "/DanS-SkiCamp-Calculator/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/DanS-SkiCamp-Calculator/index.html",
+    "main.f855e6bc.css.map": "/DanS-SkiCamp-Calculator/static/css/main.f855e6bc.css.map",
+    "main.d9636851.js.map": "/DanS-SkiCamp-Calculator/static/js/main.d9636851.js.map",
+    "453.c3672492.chunk.js.map": "/DanS-SkiCamp-Calculator/static/js/453.c3672492.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.d9636851.js"
+  ]
+}
